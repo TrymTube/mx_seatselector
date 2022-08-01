@@ -5,4 +5,4 @@ Config.SecondKey = 19 -- Default '19 - ALT' is used to access hanging spots on c
 
 Config.ShuffCommand = 'shuff'
 
-Config.SeatIcon = '✖️' -- the emoji you want to see
+Config.SeatIcon = '🔺' -- the emoji you want to see
