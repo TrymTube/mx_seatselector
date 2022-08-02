@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'Max'
 description 'easy seatselector'
-version '0.5.0'
+version '0.5.1'
 
 lua54 'on'
 

@@ -4,7 +4,7 @@ CreateThread(function()
     while true do
         local playerPed = PlayerPedId()
         local plyCoords = GetEntityCoords(playerPed)
-        local vehicle = GetClosestVehicle(plyCoords, 7.5, 0, 71)
+        local vehicle = GetClosestVehicle(plyCoords, 7.5, 0, 2175)
         local vehicleCoords = GetEntityCoords(vehicle)
 
         local dist = #(vehicleCoords - plyCoords)
@@ -14,7 +14,7 @@ CreateThread(function()
             if IsVehicleDriveable(vehicle, false) then
                 if not IsPedInAnyVehicle(playerPed, true) then
                     if IsEntityAVehicle(vehicle) and DoesEntityExist(vehicle) then
-    
+
                         -- Driver Side
                         local seatdside_fBone, seatdside_rBone = GetEntityBoneIndexByName(vehicle, 'seat_dside_f'), GetEntityBoneIndexByName(vehicle, 'seat_dside_r')
                        
@@ -178,7 +178,7 @@ function DrawText3D(x,y,z, text)
     local onScreen, _x, _y = World3dToScreen2d(x, y, z - 0.7)
 
     if onScreen then
-          SetTextScale(0.25, 0.25)
+          SetTextScale(0.2, 0.2)
           SetTextFont(6)
           SetTextProportional(1)
           SetTextColour(0, 255, 0, 255)

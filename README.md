@@ -15,3 +15,6 @@ Do not resell or try to rip this Script in any way.
 
 
 ## Changelogs
+
+Ver 0.5.1
+    - fixed entering vehicle when driver is in vehicle
